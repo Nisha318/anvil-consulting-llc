@@ -18,9 +18,10 @@ header {
 }
 
 header .logo img {
-    max-width: 200px;
+    max-width: 240px; /* Increased by 20% */
     margin-bottom: 10px;
 }
+
 
 /* Navigation */
 nav ul {
@@ -67,6 +68,7 @@ nav ul li a:hover {
     z-index: 1;
 }
 
+
 .banner-text {
     position: relative;
     z-index: 2;
@@ -79,10 +81,12 @@ nav ul li a:hover {
 }
 
 .banner-text p {
-    font-size: 1.5em;
+    font-size: 1.7em; /* Slightly larger font size */
     margin: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: #f8f8f8; /* Lighter color for better contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for better readability */
 }
+
 
 /* Sections */
 section {
