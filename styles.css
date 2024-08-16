@@ -12,19 +12,21 @@ body {
 header {
     background: #002147; /* Dark navy blue */
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header .logo img {
-    max-width: 250px;
+    max-width: 180px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 0;
 }
 
 nav ul li {
