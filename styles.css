@@ -18,9 +18,10 @@ header {
 }
 
 header .logo img {
-    max-width: 300px; /* Increased by 20% */
+    max-width: 350px; /* Set the logo width to 350px */
     margin-bottom: 10px;
 }
+
 
 
 /* Navigation */
@@ -37,11 +38,20 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e0e0e0; /* Light metallic color */
+    color: #e0e0e0; /* Default metallic color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
+
+nav ul li a.active {
+    color: #ffcc00; /* Gold color to highlight the active page */
+}
+
+nav ul li a:hover {
+    color: #b0b0b0; /* Slightly lighter metallic color for hover effect */
+}
+
 
 nav ul li a:hover {
     color: #b0b0b0; /* Slightly lighter metallic color for hover effect */
