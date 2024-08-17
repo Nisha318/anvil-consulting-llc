@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anvil Consulting LLC</title>
     <link rel="stylesheet" href="styles.css">
@@ -15,7 +16,8 @@
             <img src="assets/LOGO FILES-02.png" alt="Anvil Consulting LLC Logo">
         </div>
         <nav>
-            <ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul id="menu">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -23,6 +25,7 @@
             </ul>
         </nav>
     </header>
+    
 
     <section id="home" class="banner">
         <div class="banner-text">
