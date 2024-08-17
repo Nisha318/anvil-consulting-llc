@@ -25,24 +25,13 @@ header .logo img {
 
 /* Navigation */
 nav {
-    position: relative;
-}
-
-.menu-icon {
-    display: none; /* Hide the menu icon by default */
-    font-size: 28px;
-    cursor: pointer;
-    color: #fff;
-    position: absolute;
-    right: 20px;
-    top: 25px;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
 }
 
 nav ul li {
@@ -63,49 +52,4 @@ nav ul li a.active {
 
 nav ul li a:hover {
     color: #b0b0b0;
-}
-
-/* Collapsible Menu for Small Screens */
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block; /* Show the menu icon on small screens */
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        text-align: left;
-        background: #333;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        padding: 10px 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    }
-
-    nav ul li {
-        display: block;
-        margin: 0;
-    }
-
-    nav ul li a {
-        padding: 10px 20px;
-        display: block;
-    }
-
-    nav ul.show-menu {
-        display: flex;
-    }
-}
-
-/* Larger Screens (Desktop) */
-@media (min-width: 769px) {
-    nav ul {
-        display: flex; /* Keep the menu displayed in a row on larger screens */
-    }
-
-    .menu-icon {
-        display: none; /* Hide the menu icon on larger screens */
-    }
 }
