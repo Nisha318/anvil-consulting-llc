@@ -5,12 +5,12 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #f5f7fa; /* Light background color */
+    background-color: #f5f7fa;
 }
 
 /* Header */
 header {
-    background: #002147; /* Dark navy blue */
+    background: #002147;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -23,9 +23,9 @@ header {
 
 /* Logo */
 header .logo img {
-    max-width: 100%;  
-    height: auto;     
-    max-width: 350px; 
+    max-width: 100%;
+    height: auto;
+    max-width: 350px;
     margin-bottom: 10px;
 }
 
@@ -44,18 +44,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* White for navigation links */
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a.active {
-    color: #1e90ff; /* Light blue for the active page */
+    color: #1e90ff;
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Gold for hover */
+    color: #ffcc00;
 }
 
 /* Banner */
@@ -93,7 +93,7 @@ nav ul li a:hover {
 .banner-text p {
     font-size: 1.7em;
     margin: 0;
-    color: #ffcc00; /* Gold for the tagline */
+    color: #ffcc00;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -101,7 +101,7 @@ nav ul li a:hover {
 section {
     padding: 60px 20px;
     margin: 20px 0;
-    background: #e6f2ff; /* Light blue background */
+    background: #e6f2ff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     max-width: 1200px;
@@ -111,7 +111,7 @@ section {
 
 section h2 {
     text-align: center;
-    color: #002147; /* Dark navy blue */
+    color: #002147;
     margin-bottom: 40px;
     font-size: 2.5em;
 }
@@ -119,7 +119,7 @@ section h2 {
 section p {
     text-align: center;
     font-size: 1.2em;
-    color: #333; /* Darker text color for contrast */
+    color: #333;
 }
 
 /* Services */
@@ -144,22 +144,22 @@ section p {
 .service-box:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    background: #e6f2ff; /* Light blue on hover */
+    background: #e6f2ff;
 }
 
 .service-box h3 {
-    color: #002147; /* Dark navy blue */
+    color: #002147;
     margin-bottom: 15px;
     font-size: 1.8em;
 }
 
 .service-box p {
-    color: #333; /* Darker text color */
+    color: #333;
     font-size: 1em;
 }
 
 .button {
-    background: #1e90ff; /* Light blue */
+    background: #1e90ff;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -170,12 +170,12 @@ section p {
 }
 
 .button:hover {
-    background: #007bff; /* Darker blue on hover */
+    background: #007bff;
 }
 
 /* Call to Action Section */
 .cta-section {
-    background: #002147; /* Dark navy blue */
+    background: rgba(0, 33, 71, 0.9); /* Lightened dark navy blue for better text visibility */
     color: #fff;
     padding: 60px 20px;
     text-align: center;
@@ -192,8 +192,8 @@ section p {
 }
 
 .cta-button {
-    background: #ffcc00; /* Gold */
-    color: #002147; /* Dark navy blue text */
+    background: #ffcc00;
+    color: #002147;
     padding: 15px 30px;
     text-decoration: none;
     font-size: 1.2em;
@@ -202,24 +202,25 @@ section p {
 }
 
 .cta-button:hover {
-    background: #ffd700; /* Lighter gold on hover */
+    background: #ffd700;
 }
 
 /* Footer */
 footer {
-    background: #002147; /* Dark navy blue */
+    background: #002147;
     color: #fff;
     padding: 40px 20px;
 }
 
 .footer-content {
     display: flex;
+    flex-direction: column; /* Stack footer sections on small screens */
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .footer-section {
-    width: 30%;
+    width: 100%; /* Full width on small screens */
     margin-bottom: 20px;
 }
 
@@ -238,29 +239,31 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #1e90ff; /* Light blue for links */
+    color: #1e90ff;
     text-decoration: none;
     font-size: 1em;
     transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-    color: #ffd700; /* Lighter gold on hover */
+    color: #ffd700;
 }
 
 /* Social Media Links */
 .social-media {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .social-media li {
     margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 .social-media li a {
     font-size: 1.2em;
-    color: #1e90ff; /* Light blue for social media */
+    color: #1e90ff;
 }
 
 .footer-bottom {
@@ -287,6 +290,15 @@ footer {
     nav ul li {
         margin: 5px 0;
     }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -304,5 +316,18 @@ footer {
 
     nav ul li {
         margin: 5px 0;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 100%;
+    }
+
+    .footer-section {
+        width: 100%;
     }
 }
